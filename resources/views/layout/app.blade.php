@@ -31,15 +31,15 @@
     <!-- Topic Nav -->
     <x-navigation/>
 
+    <div class="container mx-auto w-full flex justify-start">
+        <div class=" mx-auto flex flex-col py-6 w-2/3 align-left justify-content">
 
-    <div class="container mx-auto flex flex-wrap py-6">
-
-        @yield('content')
-        <x-sidebar/>
-
-
+            @yield('content')
+        </div>
+        <div class="w-1/3 flex flex-auto">
+            <x-sidebar/>
+        </div>
     </div>
-
     <x-footer/>
 
 <script>
