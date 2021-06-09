@@ -2,6 +2,8 @@
 
 namespace App\Repositories;
 
+use A17\Twill\Repositories\Behaviors\HandleBlocks;
+use A17\Twill\Repositories\Behaviors\HandleFiles;
 use A17\Twill\Repositories\Behaviors\HandleSlugs;
 use A17\Twill\Repositories\Behaviors\HandleMedias;
 use A17\Twill\Repositories\Behaviors\HandleTags;
@@ -11,7 +13,7 @@ use App\Models\Slugs\PostSlug;
 
 class PostRepository extends ModuleRepository
 {
-    use HandleSlugs, HandleMedias, HandleTags;
+    use HandleSlugs, HandleMedias, HandleTags, HandleBlocks;
 
     public function __construct(Post $model)
     {

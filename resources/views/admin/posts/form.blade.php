@@ -12,7 +12,6 @@
         'label' => 'Subtitle',
         'maxlength' => 100
     ])
-
     @formField('tags', [
         'label' => 'Tags'
     ])
@@ -44,6 +43,10 @@
     @formField('medias', [
         'name' => 'post_image',
         'label' => 'Post Image'
+    ])
+
+    @formField('block_editor', [
+        'blocks' => []
     ])
 
 @stop

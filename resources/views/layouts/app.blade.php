@@ -41,6 +41,7 @@
         </div>
     </div>
     <x-footer/>
+    <x-responsive-indicator></x-responsive-indicator>
 
 <script>
     function getCarouselData() {
